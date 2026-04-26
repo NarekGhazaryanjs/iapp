@@ -51,6 +51,26 @@ jobs:
             iapp-deploy.zip
             shablon.txt
 
+      - name: Deploy via FTP (absolute home path)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          local-dir: ./
+          server-dir: /home/iappamfk/public_html/
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.vscode/**
+            **/node_modules/**
+            **/.DS_Store
+            iapp-deploy.zip
+            shablon.txt
+
       - name: Deploy via FTP (fallback root)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
