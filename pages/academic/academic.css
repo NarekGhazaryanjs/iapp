@@ -1,0 +1,238 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  background: #f7f7f7;
+  color: #222;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SECTION */
+.council-section {
+  padding: 80px 0;
+}
+
+/* HEADER */
+.section-header {
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #c94c4c;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.section-desc {
+  max-width: 700px;
+  color: #666;
+  margin: 20px 0 50px;
+  line-height: 1.6;
+}
+
+/* BLOCKS */
+.council-block {
+  margin-bottom: 60px;
+}
+
+.block-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-left: 3px solid #c94c4c;
+  padding-left: 12px;
+}
+
+/* TABLE */
+.council-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.council-table th,
+.council-table td {
+  padding: 16px;
+  text-align: left;
+}
+
+.council-table th {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #999;
+  border-bottom: 1px solid #eee;
+}
+
+.council-table td {
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+}
+
+.council-table tr:last-child td {
+  border-bottom: none;
+}
+
+.council-table tr {
+  transition: 0.2s ease;
+}
+
+.council-table tr:hover {
+  background: #fafafa;
+}
+
+/* ARCHIVE */
+.archive-box {
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #eee;
+  transition: 0.2s ease;
+}
+
+.archive-box:hover {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.archive-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.archive-desc {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.archive-links a {
+  display: block;
+  color: #c94c4c;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+.archive-links a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* EMPTY BOX */
+.empty-box {
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #eee;
+  color: #777;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  .section-desc {
+    font-size: 14px;
+  }
+
+  .block-title {
+    font-size: 18px;
+  }
+
+  /* TABLE → CARDS */
+  .council-table thead {
+    display: none;
+  }
+
+  .council-table,
+  .council-table tbody,
+  .council-table tr,
+  .council-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .council-table tr {
+    background: #fff;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    padding: 10px;
+  }
+
+  .council-table td {
+    border: none;
+    padding: 10px 10px 10px 50%;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .council-table td::before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  .council-table td:nth-child(1)::before {
+    content: "#";
+  }
+
+  .council-table td:nth-child(2)::before {
+    content: "Name";
+  }
+
+  .council-table td:nth-child(3)::before {
+    content: "Workplace";
+  }
+
+  .council-table td:nth-child(4)::before {
+    content: "Degree";
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 22px;
+  }
+
+  .section-desc {
+    font-size: 13px;
+  }
+}

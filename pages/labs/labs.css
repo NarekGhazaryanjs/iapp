@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background: #f7f7f7;
+  color: #222;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.section-header {
+  margin: 60px 0 40px;
+}
+
+.section-subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #c94c4c;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* GRID */
+.labs-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+/* CARD */
+.lab-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 25px;
+}
+
+/* TITLE */
+.lab-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* ACCORDION */
+.accordion {
+  border-top: 1px solid #eee;
+}
+
+/* BUTTON */
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 15px 10px 15px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  position: relative;
+}
+
+/* + / - */
+.accordion-btn::after {
+  content: "+";
+  position: absolute;
+  right: 10px;
+}
+
+.accordion-btn.active::after {
+  content: "-";
+}
+
+/* 🔥 LEFT LINE ANIMATION */
+.accordion-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #c94c4c;
+
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.accordion-btn:hover::before,
+.accordion-btn.active::before {
+  transform: scaleY(1);
+}
+
+/* CONTENT */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0 10px;
+}
+
+.accordion-content.open {
+  padding-bottom: 15px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+      cursor: pointer;
+}
+
+
+h4 {
+  margin-top: 15px;
+  font-size: 14px;
+  border-left: 3px solid #c94c4c;
+  padding-left: 8px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: calc(100% - 1.5rem);
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+    line-height: 1.2;
+  }
+
+  .lab-card {
+    padding: 16px;
+  }
+
+  .accordion-content {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .accordion-content table {
+    min-width: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  td {
+    font-size: 13px;
+    padding: 7px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}

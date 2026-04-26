@@ -1,0 +1,123 @@
+<div class="lab-card">
+
+                    <h3 class="lab-title">
+                        Laboratorie 3
+                    </h3>
+
+                    <!-- MAIN -->
+                    <div class="accordion">
+                        <p>PROPAGATION OF RADIATION IN MEDIA</p>
+                        <button class="accordion-btn">Main</button>
+                        <div class="accordion-content">
+                            <p><strong>Head of Laboratory:</strong></p>
+                            <p>Levon Shavig Grigoryan</p>
+                            <p>Head</p>
+                        </div>
+                    </div>
+
+                    <!-- STAFF -->
+                    <div class="accordion">
+                        <button class="accordion-btn">Staff</button>
+                        <div class="accordion-content">
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Levon Shavig Grigoryan</td>
+                                    <td>Leading Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Hrant Frunzik Khachatryan</td>
+                                    <td>Head</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Roland Mamikon Avagyan</td>
+                                    <td>Senior Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td> Ashot Sergei Gevorgyan</td>
+                                    <td> Senior Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td> Martik Armenak Hovhannisyan</td>
+                                    <td> Senior Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td> Vahram Vladimir Parazyan</td>
+                                    <td> Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td> Mher Levon Grigoryan</td>
+                                    <td> Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td> Vardazar Khoren Kotanjyan</td>
+                                    <td> Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td> Karen Sargis Aramyan</td>
+                                    <td> Junior Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td> Anush Vahagn Sargsyan</td>
+                                    <td> Junior Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td> Armine Ruben Mnatsakanyan</td>
+                                    <td> Junior Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td> Ghazaros Abraham Mahtesyan</td>
+                                    <td> Junior Researcher</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td> Jemma Patvakan Markosyan</td>
+                                    <td> Senior Engineer</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td> Astghik Vardan Sargsyan</td>
+                                    <td> Senior Laboratory Assistant</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>Gayane Vigen Margaryan</td>
+                                    <td>Laboratory Assistant</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>Vahe Ashot Hovhannisyan</td>
+                                    <td>Laboratory Assistant</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Azat Aram Saharyan</td>
+                                    <td>Laboratory Assistant</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>Aram Vardan Manukyan</td>
+                                    <td>Laboratory Assistant</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="accordion-btn">Groups</button>
+                        <div class="accordion-content">
+                            <h4>No Group Yet</h4>
+                        </div>
+                    </div>
+                </div>
