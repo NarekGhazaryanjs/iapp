@@ -39,7 +39,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           local-dir: ./
-          server-dir: /public_html/
+          # Matches successful Actions log: /home/iappamfk/public_html/
+          server-dir: /home/iappamfk/public_html/
+          security: loose
           dangerous-clean-slate: false
           exclude: |
             **/.git*
