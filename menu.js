@@ -112,7 +112,7 @@ const translations = {
     langName: "English",
   },
   hy: {
-    institute: "Կիրառական խնդիրների ֆիզիկայի ինստիտուտ",
+    institute: "Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ։",
     home: "Գլխավոր",
     news: "Նորություններ",
     about: "Մեր մասին",
