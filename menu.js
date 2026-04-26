@@ -760,7 +760,7 @@ function applySplitPageTitles(lang) {
   const hero = document.querySelector(".h-hero-title");
   if (hero) {
     if (lang === "hy") {
-      hero.innerHTML = "Կիրառական խնդիրների<br>ֆիզիկայի <em>ինստիտուտ</em>";
+      hero.innerHTML = "Ֆիզիկայի կիրառական<br>պրոբլեմների <em>ինստիտուտ</em>";
     } else if (lang === "ru") {
       hero.innerHTML = "Институт прикладных<br>проблем <em>физики</em>";
     } else {
