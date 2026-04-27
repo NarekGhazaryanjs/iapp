@@ -112,14 +112,14 @@ const translations = {
     langName: "English",
   },
   hy: {
-    institute: "Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ։",
+    institute: "Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ",
     home: "Գլխավոր",
     news: "Նորություններ",
     about: "Մեր մասին",
     structure: "Կառուցվածք",
     admin: "Վարչական կազմ",
     council: "Գիտական խորհուրդ",
-    academic: "Ակադեմիական խորհուրդ",
+    academic: "Մասնագիտական խորհուրդ",
     labs: "Լաբորատորիաներ",
     events: "Միջոցառումներ",
     contact: "Կապ",
@@ -258,13 +258,6 @@ const contentTranslations = {
     "IAPP NAS RA, Head of Laboratory": "Կիրառական խնդիրների ֆիզիկայի ինստիտուտ, լաբորատորիայի վարիչ",
     "Doctor of Physics": "Ֆիզիկայի դոկտոր",
     "Archive 2 — Левон Тадевосян (2025-06-28)": "Արխիվ 2 — Լևոն Թադևոսյան (2025-06-28)",
-    "Optics and its Applications in Quantum Technologies":
-      "Օպտիկան և դրա կիրառությունները քվանտային տեխնոլոգիաներում",
-    "An international event dedicated to the latest advances in quantum optics and its practical applications in modern physics and technology.":
-      "Միջազգային միջոցառում՝ նվիրված քվանտային օպտիկայի վերջին առաջընթացին և դրա գործնական կիրառություններին ժամանակակից ֆիզիկայում ու տեխնոլոգիաներում։",
-    "Alpic School for Radiation Physics": "Ալպիկի անվան ճառագայթային ֆիզիկայի դպրոց",
-    "The international scientific school brings together renowned scientists, young researchers, and students from around the world for a week of lectures and demonstrations.":
-      "Միջազգային գիտական դպրոցը մեկ շաբաթով միավորում է հայտնի գիտնականների, երիտասարդ հետազոտողների և ուսանողների՝ դասախոսությունների և ցուցադրությունների համար։",
     "Republic of Armenia": "Հայաստանի Հանրապետություն",
     "IAPP NAS RA": "ԿՖԽԻ ՀՀ ԳԱԱ",
     "ИППФ НАН РА": "ԿՖԽԻ ՀՀ ԳԱԱ",
@@ -300,8 +293,6 @@ const contentTranslations = {
     "Schools": "Դպրոցներ",
     "Conference": "Կոնֆերանս",
     "Scientific School": "Գիտական դպրոց",
-    "May": "Մայիս",
-    "Jun": "Հունիս",
     "Contact Us": "Կապ մեզ հետ",
     "Address": "Հասցե",
     "Phone & Fax": "Հեռախոս և ֆաքս",
@@ -311,7 +302,7 @@ const contentTranslations = {
     "Laboratories": "Լաբորատորիաներ",
     "RESEARCH UNITS": "ՀԵՏԱԶՈՏԱԿԱՆ ՄԻԱՎՈՐՆԵՐ",
     "ACADEMIC BODY": "ԱԿԱԴԵՄԻԱԿԱՆ ՄԱՐՄԻՆ",
-    "Academic Council": "Ակադեմիական խորհուրդ",
+    "Academic Council": "Մասնագիտական խորհուրդ",
     "Council Members": "Խորհրդի անդամներ",
     "Archive": "Արխիվ",
     "Upcoming Defenses": "Առաջիկա պաշտպանություններ",
@@ -445,13 +436,6 @@ const contentTranslations = {
     "IAPP NAS RA, Head of Laboratory": "ИППФ НАН РА, заведующий лабораторией",
     "Doctor of Physics": "Доктор физико-математических наук",
     "Archive 2 — Левон Тадевосян (2025-06-28)": "Архив 2 — Левон Тадевосян (2025-06-28)",
-    "Optics and its Applications in Quantum Technologies":
-      "Оптика и её применения в квантовых технологиях",
-    "An international event dedicated to the latest advances in quantum optics and its practical applications in modern physics and technology.":
-      "Международное мероприятие, посвящённое последним достижениям квантовой оптики и её практическим применениям в современной физике и технологиях.",
-    "Alpic School for Radiation Physics": "Школа Альпика по радиационной физике",
-    "The international scientific school brings together renowned scientists, young researchers, and students from around the world for a week of lectures and demonstrations.":
-      "Международная научная школа объединяет известных учёных, молодых исследователей и студентов со всего мира на неделю лекций и демонстраций.",
     "Republic of Armenia": "Республика Армения",
     "IAPP NAS RA": "ИППФ НАН РА",
     "ԿՖԽԻ ՀՀ ԳԱԱ": "ИППФ НАН РА",
@@ -487,8 +471,6 @@ const contentTranslations = {
     "Schools": "Школы",
     "Conference": "Конференция",
     "Scientific School": "Научная школа",
-    "May": "Май",
-    "Jun": "Июн",
     "Contact Us": "Свяжитесь с нами",
     "Address": "Адрес",
     "Phone & Fax": "Телефон и факс",
@@ -497,7 +479,7 @@ const contentTranslations = {
     "Yerevan, Republic of Armenia": "Ереван, Республика Армения",
     "Laboratories": "Лаборатории",
     "RESEARCH UNITS": "ИССЛЕДОВАТЕЛЬСКИЕ ПОДРАЗДЕЛЕНИЯ",
-    "ACADEMIC BODY": "АКАДЕМИЧЕСКИЙ ОРГАН",
+    "ACADEMIC BODY": "",
     "Academic Council": "Академический совет",
     "Council Members": "Члены совета",
     "Archive": "Архив",
@@ -804,7 +786,7 @@ function applySplitPageTitles(lang) {
   const contactOrg = document.querySelector("section.contact-section .c-org");
   if (contactOrg) {
     if (lang === "hy") {
-      contactOrg.innerHTML = "Կիրառական խնդիրների<br>ֆիզիկայի ինստիտուտ<br>ՀՀ ԳԱԱ";
+      contactOrg.innerHTML = "Ֆիզիկայի կիրառական<br>պռոբլեմների ինստիտուտ<br>ՀՀ ԳԱԱ";
     } else if (lang === "ru") {
       contactOrg.innerHTML = "Институт прикладных<br>проблем физики<br>НАН РА";
     } else {
@@ -904,7 +886,7 @@ function applyLanguage(lang) {
   document.querySelectorAll("h2").forEach((el) => {
     if (
       el.textContent &&
-      /Institute of Applied Problems of Physics|Կիրառական խնդիրների ֆիզիկայի ինստիտուտ|Институт прикладных проблем физики/i.test(
+      /Institute of Applied Problems of Physics|Կիրառական խնդիրների ֆիզիկայի ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ։|Институт прикладных проблем физики/i.test(
         el.textContent.trim()
       )
     ) {
