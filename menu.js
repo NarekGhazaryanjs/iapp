@@ -810,8 +810,8 @@ function applySplitPageTitles(lang) {
 
   const eventDays = document.querySelectorAll("section.events-section .e-day");
   if (lang === "hy") {
-    if (eventDays[0]) eventDays[0].textContent = "04 ՄԱՅ - 08 ՄԱՅ";
-    if (eventDays[1]) eventDays[1].textContent = "21 ՀՆՍ - 28 ՀՆՍ";
+    if (eventDays[0]) eventDays[0].textContent = "04 մայիս - 08 մայիս";
+    if (eventDays[1]) eventDays[1].textContent = "21 հունիս - 28 հունիս";
   } else if (lang === "ru") {
     if (eventDays[0]) eventDays[0].textContent = "04 МАЙ - 08 МАЙ";
     if (eventDays[1]) eventDays[1].textContent = "21 ИЮН - 28 ИЮН";
