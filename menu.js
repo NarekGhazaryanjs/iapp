@@ -292,7 +292,7 @@ const contentTranslations = {
     "Founded in 1980, IAPP NAS RA is a leading scientific institution conducting fundamental and applied research in physics and related fields.":
       "Հիմնադրված 1980 թվականին՝ Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտը առաջատար գիտական հաստատություն է, որը իրականացնում է հիմնարար և կիրառական հետազոտություններ ֆիզիկայի և հարակից ոլորտներում։",
     "© 2024 Institute of Applied Problems of Physics. All rights reserved.":
-      "© 2024 Կիրառական խնդիրների ֆիզիկայի ինստիտուտ։ Բոլոր իրավունքները պաշտպանված են։",
+      "© 2024 Ֆիզիկայի կիրառական պռոբլեմների ինստիտուտ։ Բոլոր իրավունքները պաշտպանված են։",
     "DEVELOPED BY N2G BRAINS LLC": "ՄՇԱԿՈՂ՝ N2G BRAINS ՍՊԸ",
     "Upcoming events": "Առաջիկա միջոցառումներ",
     "Events &": "Միջոցառումներ և",
