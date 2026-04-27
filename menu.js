@@ -301,9 +301,9 @@ const contentTranslations = {
     "Yerevan, Republic of Armenia": "Երևան, Հայաստանի Հանրապետություն",
     "Laboratories": "Լաբորատորիաներ",
     "RESEARCH UNITS": "ՀԵՏԱԶՈՏԱԿԱՆ ՄԻԱՎՈՐՆԵՐ",
-    "ACADEMIC BODY": "ԱԿԱԴԵՄԻԱԿԱՆ ՄԱՐՄԻՆ",
+    "ACADEMIC BODY": "",
     "Academic Council": "Մասնագիտական խորհուրդ",
-    "Council Members": "Խորհրդի անդամներ",
+    "Council Members": "Խորհուրդի անդամներ",
     "Archive": "Արխիվ",
     "Upcoming Defenses": "Առաջիկա պաշտպանություններ",
     "No upcoming defenses are scheduled at the moment.":
@@ -786,12 +786,38 @@ function applySplitPageTitles(lang) {
   const contactOrg = document.querySelector("section.contact-section .c-org");
   if (contactOrg) {
     if (lang === "hy") {
-      contactOrg.innerHTML = "Ֆիզիկայի կիրառական<br>պռոբլեմների ինստիտուտ<br>ՀՀ ԳԱԱ";
+      contactOrg.innerHTML = "Ֆիզիկայի կիրառական<br>պռոբլեմմների ինստիտուտ<br>ՀՀ ԳԱԱ";
     } else if (lang === "ru") {
       contactOrg.innerHTML = "Институт прикладных<br>проблем физики<br>НАН РА";
     } else {
       contactOrg.innerHTML = "Institute of Applied<br>Problems of Physics<br>NAS RA";
     }
+  }
+
+  // Keep event card titles in English for all languages.
+  const eventsTitle = document.querySelector("section.events-section .e-title");
+  if (eventsTitle) {
+    eventsTitle.innerHTML = "Events & <em>Schools</em>";
+  }
+
+  const eventCardTitles = document.querySelectorAll("section.events-section .e-card-title");
+  if (eventCardTitles[0]) {
+    eventCardTitles[0].textContent = "Optics and its Applications in Quantum Technologies";
+  }
+  if (eventCardTitles[1]) {
+    eventCardTitles[1].textContent = "Alpic School for Radiation Physics";
+  }
+
+  const eventDays = document.querySelectorAll("section.events-section .e-day");
+  if (lang === "hy") {
+    if (eventDays[0]) eventDays[0].textContent = "04 ՄԱՅ - 08 ՄԱՅ";
+    if (eventDays[1]) eventDays[1].textContent = "21 ՀՆՍ - 28 ՀՆՍ";
+  } else if (lang === "ru") {
+    if (eventDays[0]) eventDays[0].textContent = "04 МАЙ - 08 МАЙ";
+    if (eventDays[1]) eventDays[1].textContent = "21 ИЮН - 28 ИЮН";
+  } else {
+    if (eventDays[0]) eventDays[0].textContent = "04 MAY - 08 MAY";
+    if (eventDays[1]) eventDays[1].textContent = "21 JUN - 28 JUN";
   }
 }
 
@@ -886,7 +912,7 @@ function applyLanguage(lang) {
   document.querySelectorAll("h2").forEach((el) => {
     if (
       el.textContent &&
-      /Institute of Applied Problems of Physics|Կիրառական խնդիրների ֆիզիկայի ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ։|Институт прикладных проблем физики/i.test(
+      /Institute of Applied Problems of Physics|Կիրառական խնդիրների ֆիզիկայի ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ։|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ:|Институт прикладных проблем физики/i.test(
         el.textContent.trim()
       )
     ) {
