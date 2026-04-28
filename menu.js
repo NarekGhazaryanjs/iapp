@@ -112,7 +112,7 @@ const translations = {
     langName: "English",
   },
   hy: {
-    institute: "Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ",
+    institute: "Ֆիզիկայի Կիրառական Պռոբլեմների Ինստիտուտ",
     home: "Գլխավոր",
     news: "Նորություններ",
     about: "Մեր մասին",
@@ -260,7 +260,7 @@ const contentTranslations = {
     "д.ф.-м.н.": "Ֆ.մ.գ.դ.",
     "д.т.н.": "Տեխ.գ.դ.",
     "к.т.н.": "Տեխ.գ.թ.",
-    "IAPP NAS RA, Head of Laboratory": "Կիրառական խնդիրների ֆիզիկայի ինստիտուտ, լաբորատորիայի վարիչ",
+    "IAPP NAS RA, Head of Laboratory": "Ֆիզիկայի Կիրառական Պռոբլեմների Ինստիտուտ, լաբորատորիայի վարիչ",
     "Doctor of Physics": "Ֆիզիկայի դոկտոր",
     "Archive 2 — Левон Тадевосян (2025-06-28)": "Արխիվ 2 — Լևոն Թադևոսյան (2025-06-28)",
     "Republic of Armenia": "Հայաստանի Հանրապետություն",
@@ -286,7 +286,7 @@ const contentTranslations = {
     "No Group Yet": "Խումբ դեռ չկա",
     "Our ": "Մեր ",
     "The IAPP Institute is located at 25 Hr. Nersisyan Street in Yerevan. With a strong foundation of scientific tradition and a well-established research school, the Institute currently employs approximately 200 staff members, including three Corresponding Members of the NAS RA, eighteen Doctors of Science, and forty-seven Candidates of Science.":
-      "Կիրառական խնդիրների ֆիզիկայի ինստիտուտը գտնվում է Երևանի Հր. Ներսիսյան 25 հասցեում։ Ունենալով գիտական ավանդույթների ամուր հիմք և կայացած գիտական դպրոց՝ ինստիտուտում ներկայում աշխատում է շուրջ 200 աշխատակից, այդ թվում՝ ՀՀ ԳԱԱ երեք թղթակից անդամ, գիտության 18 դոկտոր և 47 գիտության թեկնածու։",
+      "Ֆիզիկայի Կիրառական Պռոբլեմների Ինստիտուտը գտնվում է Երևանի Հր. Ներսիսյան 25 հասցեում։ Ունենալով գիտական ավանդույթների ամուր հիմք և կայացած գիտական դպրոց՝ ինստիտուտում ներկայում աշխատում է շուրջ 200 աշխատակից, այդ թվում՝ ՀՀ ԳԱԱ երեք թղթակից անդամ, գիտության 18 դոկտոր և 47 գիտության թեկնածու։",
     "From its founding in 1980 until 2006, the Institute was directed by Academician Alpik R. Mkrtchyan. After returning to Yerevan in 1968, he focused his research on gamma-resonance (Mössbauer) spectroscopy, X-ray and optical modulation spectroscopy, acoustics, and the development of scientific instruments. Having assembled a team of talented young specialists, he began establishing the Institute in 1980.":
       "1980-ից մինչև 2006 թվականը ինստիտուտը ղեկավարել է ակադեմիկոս Ալպիկ Ռ. Մկրտչյանը։ 1968 թվականին Երևան վերադառնալուց հետո նա իր հետազոտությունները կենտրոնացրել է գամմա-ռեզոնանսային (Մյոսբաուեր) սպեկտրոսկոպիայի, ռենտգենյան և օպտիկական մոդուլյացիոն սպեկտրոսկոպիայի, ակուստիկայի և գիտական սարքերի մշակման վրա։ Հավաքելով տաղանդավոր երիտասարդ մասնագետների թիմ՝ նա 1980-ին ձեռնամուխ է եղել ինստիտուտի ձևավորմանը։",
     "Based on the results of fundamental investigations conducted at the Institute, a new scientific discipline — acoustophysics — has emerged. This field examines various physical phenomena in the presence of acoustic fields. The Institute actively pursues scientific and technical developments, including the creation of innovative prototypes of scientific instruments.":
@@ -295,9 +295,9 @@ const contentTranslations = {
       "Ինստիտուտը պարբերաբար կազմակերպում է միջազգային գիտաժողովներ և գիտական դպրոցներ, այդ թվում՝ «Էլեկտրոնների, պոզիտրոնների, նեյտրոնների և ռենտգենյան ճառագայթների ցրումը արտաքին ազդեցությունների պայմաններում» միջազգային գիտաժողովը, ակադեմիկոս Ալպիկ Մկրտչյանի անվան ճառագայթային ֆիզիկայի միջազգային գիտական դպրոցը (ASRP), ակուստոֆիզիկայի միջազգային գիտական դպրոց-գիտաժողովը և Գ. Ա. Ասքարյանի անվան միջազգային գիտական դպրոցը։",
     "Director": "Տնօրեն",
     "Founded in 1980, IAPP NAS RA is a leading scientific institution conducting fundamental and applied research in physics and related fields.":
-      "Հիմնադրված 1980 թվականին՝ Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտը առաջատար գիտական հաստատություն է, որը իրականացնում է հիմնարար և կիրառական հետազոտություններ ֆիզիկայի և հարակից ոլորտներում։",
+      "Հիմնադրված 1980 թվականին՝ Ֆիզիկայի Կիրառական Պռոբլեմների Ինստիտուտը առաջատար գիտական հաստատություն է, որը իրականացնում է հիմնարար և կիրառական հետազոտություններ ֆիզիկայի և հարակից ոլորտներում։",
     "© 2024 Institute of Applied Problems of Physics. All rights reserved.":
-      "© 2024 Ֆիզիկայի կիրառական պռոբլեմների ինստիտուտ։ Բոլոր իրավունքները պաշտպանված են։",
+      "© 2024 Ֆիզիկայի Կիրառական Պռոբլեմների Ինստիտուտ։ Բոլոր իրավունքները պաշտպանված են։",
     "DEVELOPED BY N2G BRAINS LLC": "ՄՇԱԿՈՂ՝ N2G BRAINS ՍՊԸ",
     "Upcoming events": "Առաջիկա միջոցառումներ",
     "Events &": "Միջոցառումներ և",
@@ -346,9 +346,9 @@ const contentTranslations = {
     "Events & ": "Միջոցառումներ և ",
     "Staff & ": "Աշխատակազմ և ",
     "The Institute of Applied Problems of Physics of the NAS RA is celebrating its 45th anniversary.":
-      "ՀՀ ԳԱԱ Կիրառական խնդիրների ֆիզիկայի ինստիտուտը նշում է իր 45-ամյակը։",
+      "ՀՀ ԳԱԱ Ֆիզիկայի Կիրառական Պռոբլեմների Ինստիտուտը նշում է իր 45-ամյակը։",
     "On June 17 of this year, at 15:00, a solemn event dedicated to the 45th anniversary of the founding of the Institute will take place at the Institute of Applied Problems of Physics of the NAS RA, located at 25 Hr. Nersisyan Street, Yerevan.":
-      "Սույն թվականի հունիսի 17-ին, ժամը 15:00-ին, ՀՀ ԳԱԱ Կիրառական խնդիրների ֆիզիկայի ինստիտուտում (Երևան, Հր. Ներսիսյան 25) տեղի կունենա ինստիտուտի հիմնադրման 45-ամյակին նվիրված հանդիսավոր միջոցառում։",
+      "Սույն թվականի հունիսի 17-ին, ժամը 15:00-ին, ՀՀ ԳԱԱ Ֆիզիկայի Կիրառական Պռոբլեմների Ինստիտուտում (Երևան, Հր. Ներսիսյան 25) տեղի կունենա ինստիտուտի հիմնադրման 45-ամյակին նվիրված հանդիսավոր միջոցառում։",
     "Speeches will be delivered by Academician Ashot Saghyan, President of the NAS RA, Vahan Kocharyan, Director of IAPP NAS RA, and distinguished guests from Italy, Russia, and other countries. Following the speeches, a ceremony will be held to honor and award the distinguished researchers of the institute.":
       "Ելույթներով հանդես կգան ՀՀ ԳԱԱ նախագահ ակադեմիկոս Աշոտ Սաղյանը, ինստիտուտի տնօրեն Վահան Քոչարյանը և Իտալիայից, Ռուսաստանից ու այլ երկրներից ժամանած հյուրերը։ Ելույթներից հետո կանցկացվի ինստիտուտի վաստակաշատ գիտաշխատողների պարգևատրման արարողություն։",
     "As part of the jubilee events, the 4th International Scientific School named after Academician Alpik Mkrtchyan titled \"Radiation Physics and Related Applications\" kicked off on June 16, bringing together renowned scientists from the UK, Italy, Armenia, Malaysia, Switzerland, Russia, and Saudi Arabia.":
@@ -756,7 +756,7 @@ function applySplitPageTitles(lang) {
   const hero = document.querySelector(".h-hero-title");
   if (hero) {
     if (lang === "hy") {
-      hero.innerHTML = "Ֆիզիկայի կիրառական<br>պրոբլեմների <em>ինստիտուտ</em>";
+      hero.innerHTML = "Ֆիզիկայի Կիրառական<br>Պռոբլեմների <em>Ինստիտուտ</em>";
     } else if (lang === "ru") {
       hero.innerHTML = "Институт прикладных<br>проблем <em>физики</em>";
     } else {
@@ -827,7 +827,7 @@ function applySplitPageTitles(lang) {
   const contactOrg = document.querySelector("section.contact-section .c-org");
   if (contactOrg) {
     if (lang === "hy") {
-      contactOrg.innerHTML = "Ֆիզիկայի կիրառական<br>պռոբլեմմների ինստիտուտ<br>ՀՀ ԳԱԱ";
+      contactOrg.innerHTML = "Ֆիզիկայի Կիրառական<br>Պռոբլեմների Ինստիտուտ<br>ՀՀ ԳԱԱ";
     } else if (lang === "ru") {
       contactOrg.innerHTML = "Институт прикладных<br>проблем физики<br>НАН РА";
     } else {
@@ -959,7 +959,7 @@ function applyLanguage(lang) {
   document.querySelectorAll("h2").forEach((el) => {
     if (
       el.textContent &&
-      /Institute of Applied Problems of Physics|Կիրառական խնդիրների ֆիզիկայի ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ։|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ:|Институт прикладных проблем физики/i.test(
+      /Institute of Applied Problems of Physics|Կիրառական խնդիրների ֆիզիկայի ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ։|Ֆիզիկայի կիրառական պրոբլեմների ինստիտուտ:|Ֆիզիկայի Կիրառական Պռոբլեմների Ինստիտուտ|Физики Кիրառական Պռոբլեմների Ինստիտուտ։|Институт прикладных проблем физики/i.test(
         el.textContent.trim()
       )
     ) {
