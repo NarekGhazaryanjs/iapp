@@ -213,7 +213,7 @@ const contentTranslations = {
     "Prof. Artak H. Mkrtchyan": "Պրոֆ. Արտակ Հ. Մկրտչյան",
     "Dr. Vahan R. Kocharyan": "Դոկտ. Վահան Ռ. Քոչարյան",
     "Founded the Institute in 1980. His research focused on Mössbauer spectroscopy, X-ray and optical modulation spectroscopy, acoustics, and scientific instrumentation.":
-      "1980 թվականին հիմնադրել է ինստիտուտը։ Նրա հետազոտությունները կենտրոնացած էին Մյոսբաուերյան սպեկտրոսկոպիայի, ռենտգենյան և օպտիկական մոդուլյացիոն սպեկտրոսկոպիայի, ակուստիկայի և գիտական սարքաշինության վրա։",
+      "1980 թվականին հիմնադրել է ինստիտուտը։",
     "Corresponding member of the NAS RA. Led the Institute through a period of expanded international collaboration and research.":
       "ՀՀ ԳԱԱ թղթակից անդամ։ Ղեկավարել է ինստիտուտը միջազգային համագործակցության և հետազոտությունների ընդլայնման փուլում։",
     "Currently leading the Institute, continuing its tradition of fundamental and applied research in physics and related fields.":
@@ -259,8 +259,8 @@ const contentTranslations = {
     "Doctor of Physics": "Ֆիզիկայի դոկտոր",
     "Archive 2 — Левон Тадевосян (2025-06-28)": "Արխիվ 2 — Լևոն Թադևոսյան (2025-06-28)",
     "Republic of Armenia": "Հայաստանի Հանրապետություն",
-    "IAPP NAS RA": "ԿՖԽԻ ՀՀ ԳԱԱ",
-    "ИППФ НАН РА": "ԿՖԽԻ ՀՀ ԳԱԱ",
+    "IAPP NAS RA": "ՖԿՊԻ ՀՀ ԳԱԱ",
+    "ИППФ НАН РА": "ՖԿՊԻ ՀՀ ԳԱԱ",
     "Kocharyan Vahan Rashidi": "Քոչարյան Վահան Ռաշիդի",
     "Khachatryan Hrant Frunzik": "Խաչատրյան Հրանտ Ֆրունզիկի",
     "Nahapetyan Aram Artaki": "Նահապետյան Արամ Արտակի",
@@ -357,7 +357,7 @@ const contentTranslations = {
       "Միջոցառման ընթացքում անցկացվեցին գիտահանրամատչելի դասախոսություններ, լաբորատոր այցելություններ ու ցուցադրություններ, ինչպես նաև երիտասարդների հանդիպումներ փորձառու մասնագետների հետ։",
     "Science Week – 2025": "Գիտության շաբաթ – 2025",
     "IAPP NAS RA is celebrating its 45th anniversary":
-      "ԿՖԽԻ-ն նշում է իր 45-ամյակը",
+      "ՖԿՊԻ-ն նշում է իր 45-ամյակը",
     "On June 17, at 15:00, a solemn event dedicated to the 45th anniversary of the founding of the Institute will take place at 25 Hr. Nersisyan Street, Yerevan. Speeches will be delivered by Academician Ashot Saghyan, Vahan Kocharyan, and distinguished guests from Italy, Russia, and other countries.":
       "Հունիսի 17-ին, ժամը 15:00-ին, Երևանի Հր. Ներսիսյան 25 հասցեում տեղի կունենա ինստիտուտի հիմնադրման 45-ամյակին նվիրված հանդիսավոր միջոցառում։ Ելույթ կունենան ակադեմիկոս Աշոտ Սաղյանը, Վահան Քոչարյանը և Իտալիայից, Ռուսաստանից ու այլ երկրներից ժամանած հյուրեր։",
     "At the Institute, events are held aimed at presenting the applications of light and radiation in current problems of physics, showcasing research in optics, laser physics, and radiation physics, and encouraging young scientists to explore light-based technologies.":
