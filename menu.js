@@ -788,11 +788,22 @@ function applySplitPageTitles(lang) {
   const councilTitle = document.querySelector(".inner > .a-head .a-title");
   if (councilTitle) {
     if (lang === "hy") {
-      councilTitle.innerHTML = "Մեր <em>կազմը</em>";
+      councilTitle.innerHTML = "Մասնագիտական <em>խորհուրդ</em>";
     } else if (lang === "ru") {
       councilTitle.innerHTML = "Наш <em>состав</em>";
     } else {
       councilTitle.innerHTML = "Our <em>Staff</em>";
+    }
+  }
+
+  const councilEyebrow = document.querySelector(".inner > .a-head .a-eyebrow span");
+  if (councilEyebrow) {
+    if (lang === "hy") {
+      councilEyebrow.textContent = "Մասնագիտական խորհուրդ";
+    } else if (lang === "ru") {
+      councilEyebrow.textContent = "Научный совет";
+    } else {
+      councilEyebrow.textContent = "Scientific Council";
     }
   }
 
