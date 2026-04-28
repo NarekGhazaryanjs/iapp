@@ -788,7 +788,7 @@ function applySplitPageTitles(lang) {
   const councilTitle = document.querySelector(".inner > .a-head .a-title");
   if (councilTitle) {
     if (lang === "hy") {
-      councilTitle.innerHTML = "Մասնագիտական <em>խորհուրդ</em>";
+      councilTitle.innerHTML = "Մեր <em>կազմը</em>";
     } else if (lang === "ru") {
       councilTitle.innerHTML = "Наш <em>состав</em>";
     } else {
