@@ -212,6 +212,7 @@ const contentTranslations = {
     "Academician Alpik R. Mkrtchyan": "Ակադեմիկոս Ալպիկ Ռ. Մկրտչյան",
     "Prof. Artak H. Mkrtchyan": "Պրոֆ. Արտակ Հ. Մկրտչյան",
     "Dr. Vahan R. Kocharyan": "Դոկտ. Վահան Ռ. Քոչարյան",
+    "Founded the Institute in 1980.": "1980 թվականին հիմնադրել է ինստիտուտը։",
     "Founded the Institute in 1980. His research focused on Mössbauer spectroscopy, X-ray and optical modulation spectroscopy, acoustics, and scientific instrumentation.":
       "1980 թվականին հիմնադրել է ինստիտուտը։",
     "Corresponding member of the NAS RA. Led the Institute through a period of expanded international collaboration and research.":
@@ -405,6 +406,7 @@ const contentTranslations = {
     "Academician Alpik R. Mkrtchyan": "Академик Алпик Р. Мкртчян",
     "Prof. Artak H. Mkrtchyan": "Проф. Артак Г. Мкртчян",
     "Dr. Vahan R. Kocharyan": "Д-р Ваган Р. Кочарян",
+    "Founded the Institute in 1980.": "Основал институт в 1980 году.",
     "Founded the Institute in 1980. His research focused on Mössbauer spectroscopy, X-ray and optical modulation spectroscopy, acoustics, and scientific instrumentation.":
       "Основал институт в 1980 году. Его исследования были сосредоточены на мёссбауэровской спектроскопии, рентгеновской и оптической модуляционной спектроскопии, акустике и научном приборостроении.",
     "Corresponding member of the NAS RA. Led the Institute through a period of expanded international collaboration and research.":
