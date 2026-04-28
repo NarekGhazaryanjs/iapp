@@ -756,6 +756,11 @@ function applySplitPageTitles(lang) {
     }
   }
 
+  const heroSubtitle = document.querySelector(".h-hero-sub");
+  if (heroSubtitle) {
+    heroSubtitle.textContent = "";
+  }
+
   const aboutTitle = document.querySelector("section.about-section .a-title");
   if (aboutTitle) {
     if (lang === "hy") {
@@ -764,6 +769,17 @@ function applySplitPageTitles(lang) {
       aboutTitle.innerHTML = "О <em>нас</em>";
     } else {
       aboutTitle.innerHTML = "About <em>Us</em>";
+    }
+  }
+
+  const homeSectionTitle = document.querySelector(".h-section-title");
+  if (homeSectionTitle) {
+    if (lang === "hy") {
+      homeSectionTitle.innerHTML = "Նորություններ և <em>Միջոցառումներ</em>";
+    } else if (lang === "ru") {
+      homeSectionTitle.innerHTML = "Новости и <em>Мероприятия</em>";
+    } else {
+      homeSectionTitle.innerHTML = "News & <em>Events</em>";
     }
   }
 
@@ -803,7 +819,13 @@ function applySplitPageTitles(lang) {
   // Keep event card titles in English for all languages.
   const eventsTitle = document.querySelector("section.events-section .e-title");
   if (eventsTitle) {
-    eventsTitle.innerHTML = "Events & <em>Schools</em>";
+    if (lang === "hy") {
+      eventsTitle.innerHTML = "Նորություններ և <em>Միջոցառումներ</em>";
+    } else if (lang === "ru") {
+      eventsTitle.innerHTML = "Новости и <em>Мероприятия</em>";
+    } else {
+      eventsTitle.innerHTML = "Events & <em>Schools</em>";
+    }
   }
 
   const eventCardTitles = document.querySelectorAll("section.events-section .e-card-title");
