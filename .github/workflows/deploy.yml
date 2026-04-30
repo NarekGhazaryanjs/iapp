@@ -24,12 +24,15 @@ jobs:
           test -f index.css
           test -f menu.js
           test -f menu.css
-          test -d about
-          test -d contact
-          test -d events
-          test -d news
-          test -d pages
-          test -d logos
+
+      - name: Prepare emergency root deploy bundle
+        run: |
+          rm -rf deploy-root
+          mkdir -p deploy-root
+          cp index.html deploy-root/index.html
+          cp index.css deploy-root/index.css
+          cp menu.js deploy-root/menu.js
+          cp menu.css deploy-root/menu.css
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -38,7 +41,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
-          local-dir: ./
+          local-dir: ./deploy-root/
           server-dir: /
           dangerous-clean-slate: false
           exclude: |
