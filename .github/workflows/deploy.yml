@@ -42,7 +42,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           local-dir: ./deploy-root/
-          server-dir: /
+          server-dir: /public_html/
           dangerous-clean-slate: false
           exclude: |
             **/.git*
