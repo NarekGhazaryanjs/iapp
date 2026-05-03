@@ -1,4 +1,5 @@
 name: Deploy iapp to cPanel
+# noop: trigger deploy sanity check (no functional change)
 
 on:
   push:
