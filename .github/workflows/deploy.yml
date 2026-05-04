@@ -1,56 +1,71 @@
-name: Deploy iapp to cPanel
-# cPanel often requires explicit FTPS on port 21; use security: loose for self-signed certs.
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-concurrency:
-  group: deploy-production
-  cancel-in-progress: true
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Validate required files
-        run: |
-          test -f index.html
-          test -f index.css
-          test -f menu.js
-          test -f menu.css
-          test -d about
-          test -d contact
-          test -d events
-          test -d news
-          test -d pages
-          test -d logos
-
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          security: loose
-          port: 21
-          timeout: 120000
-          local-dir: ./
-          server-dir: /public_html/
-          dangerous-clean-slate: false
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.github/**
-            **/.vscode/**
-            **/node_modules/**
-            **/.DS_Store
-            iapp-deploy.zip
-            shablon.txt
+name: Deploy iapp to cPanel
+# 530 Login authentication failed = GitHub Secrets FTP_* do not match cPanel (common after restore).
+# Fix: cPanel → FTP Accounts → reset password → Repo Settings → Secrets and variables → Actions → update FTP_SERVER, FTP_USERNAME, FTP_PASSWORD.
+# Optional: Repository variable FTP_PROTOCOL = ftps (default ftp) if your host requires explicit TLS on port 21.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        run: |
+          test -f index.html
+          test -f index.css
+          test -f menu.js
+          test -f menu.css
+          test -d about
+          test -d contact
+          test -d events
+          test -d news
+          test -d pages
+          test -d logos
+
+      - name: Verify FTP secrets are non-empty
+        shell: bash
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          err=0
+          if [ -z "${FTP_SERVER// }" ]; then echo "::error::Secret FTP_SERVER is empty — set it in repo Settings → Secrets and variables → Actions"; err=1; fi
+          if [ -z "${FTP_USERNAME// }" ]; then echo "::error::Secret FTP_USERNAME is empty — use the full FTP username from cPanel (often email form)"; err=1; fi
+          if [ -z "${FTP_PASSWORD// }" ]; then echo "::error::Secret FTP_PASSWORD is empty — paste the current FTP password from cPanel"; err=1; fi
+          exit $err
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftp' }}
+          security: loose
+          timeout: 120000
+          local-dir: ./
+          server-dir: /public_html/
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.vscode/**
+            **/node_modules/**
+            **/.DS_Store
+            iapp-deploy.zip
+            shablon.txt
+
