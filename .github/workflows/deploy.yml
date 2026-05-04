@@ -1,5 +1,5 @@
 name: Deploy iapp to cPanel
-# noop: trigger deploy sanity check (no functional change)
+# cPanel often requires explicit FTPS on port 21; use security: loose for self-signed certs.
 
 on:
   push:
@@ -38,7 +38,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
+          protocol: ftps
+          security: loose
+          port: 21
+          timeout: 120000
           local-dir: ./
           server-dir: /public_html/
           dangerous-clean-slate: false
